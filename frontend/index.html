@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth L | BCA Student & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Yashwanth L.</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Hello, I'm Yashwanth L</h2>
+                    <p class="hero-subtitle">A dedicated BCA Student with a passion for emerging technologies and building impactful digital solutions.</p>
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p style="margin-bottom: 2rem; text-align: left;">
+                        I am Yashwanth L, a dedicated BCA student currently pursuing my second semester. I have a keen interest in computer science and emerging technologies. I enjoy learning programming and building simple web applications. I am passionate about improving my technical and problem-solving skills. I am looking forward to gaining practical experience and growing as a software developer.
+                    </p>
+                    <div style="background-color: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: left;">
+                        <h3 style="color: var(--accent); margin-bottom: 1rem;">Career Goals</h3>
+                        <p>
+                            My career goal is to become a successful software developer in the IT industry. I aim to develop strong skills in programming, databases, and modern technologies. I want to work on real-world projects and continuously improve my knowledge. I also aspire to contribute to innovative and impactful software solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div style="max-width: 600px; margin: 0 auto; background-color: var(--bg-secondary); padding: 3rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); text-align: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Bachelor of Computer Applications (BCA)</h3>
+                    <p style="font-size: 1.1rem; color: var(--accent); font-weight: 600; margin-bottom: 1rem;">Kristu Jayanti University</p>
+                    <div style="display: inline-block; padding: 0.5rem 1rem; background-color: rgba(59, 130, 246, 0.1); border-radius: 20px; font-weight: 500; color: var(--text-secondary);">
+                        Currently in 2nd Semester
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Skills & Interests</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>Technical Skills</h3>
+                        <p>C Programming, Java (Basic), HTML, CSS, JavaScript, Database Basics</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools Utilized</h3>
+                        <p>Visual Studio Code, Git & GitHub, Firebase (Firestore), MS Office</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🗣️</div>
+                        <h3>Soft Skills</h3>
+                        <p>Communication, Teamwork, Problem-Solving, Time Management</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🚀</div>
+                        <h3>Core Interests</h3>
+                        <p>IoT, Edge Computing, DBMS, Web & Software Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Feel free to reach out to me via email at <a href="mailto:25bcae79@kristujayanti.com" style="color: var(--accent); text-decoration: none; font-weight: 600;">25bcae79@kristujayanti.com</a><br>
+                    or call me at <span style="color: var(--accent); font-weight: 600;">+91 9036224843</span>.
+                </p>
+                
+                <div class="form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message
+                            <span class="spinner" id="submitSpinner"></span>
+                        </button>
+                    </form>
+                    <div id="responseMessage" class="response-message hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yashwanth L. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
